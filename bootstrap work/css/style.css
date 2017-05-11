@@ -2,13 +2,13 @@
        @import url('https://fonts.googleapis.com/css?family=Acme|Pacifico');
 
        html{
-        min-height: 100%;
+        min-height: 1936px;
         position: relative;
        }
 
         body{
             margin: 0;
-            height: 1936px;
+            height: 100%;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -16,7 +16,7 @@
 
         .navbar{
             position: fixed;
-            width: 90%;
+            width: 95%;
             z-index: 16;
             font-family: 'Acme', cursive;
             font-size: 17px;
@@ -109,9 +109,16 @@
         }
 
         .well-video{
-            width: 40%;
+            width: 45%;
             height: 50%;
+            padding: 0px;
+
         }
+
+        .well-video iframe{
+            width: 100%;
+            height: 100%;
+         }
 
         /* FOOTER */
 
@@ -130,7 +137,7 @@
         .form-horizontal{
             bottom: 305px;
             font-family: 'Acme', cursive;
-            transform: rotateY(180deg);
+            
             width: 80%;
             position: relative;
             left: 20px;
@@ -154,7 +161,20 @@
             position: relative;
         }*/
 
-       
+        #info{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 50%;
+        }
+
+        #info .go-plus{
+            position: relative;
+            left: -450;
+        }
+
 
         #anim-footer{
             display: flex;
@@ -181,6 +201,10 @@
         /* For Desktop */
 
         @media only screen and (max-width: 1200px) {
+            html{
+                min-height: 1666px;
+            }
+
             .carousel-inner{
                 width: 100%;
                 max-height: 480px !important;
@@ -199,6 +223,11 @@
         /* For Tablets */
 
         @media only screen and (max-width: 768px) {
+             
+             html{
+                min-height: 1555px;
+                }
+
             .carousel-inner{
                 width: 100%;
                 max-height: 376px !important;
@@ -211,11 +240,19 @@
             .carousel-indicators{
                 top: 350px;
             }
+
+            #interior{
+                flex-direction: column;
+            }
         }
 
         /* For mobile phones: */
 
         @media only screen and (max-width: 600px) {
+
+            html{
+                min-height: 1430px;
+            }
             
             .carousel-inner{
                 width: 100%;
@@ -246,6 +283,10 @@
             .form-group label{
              color: #ffffff;
              font-size: 13px;
+            }
+
+            #interior{
+                flex-direction: column;
             }
         }
 
