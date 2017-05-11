@@ -8,7 +8,7 @@
 
         body{
             margin: 0;
-            height: 2000px;
+            height: 1936px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -90,9 +90,33 @@
             font-size: 16px;
         }
 
+        /*PARTE INTERIOR*/
+
+        #interior{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 865px;
+            padding: 35px;
+        }
+
+        .well-info{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .well-video{
+            width: 40%;
+            height: 50%;
+        }
+
         /* FOOTER */
 
          #footer{
+            background-image: url("../img/backfoot.png");
             position: absolute;
             overflow: hidden;
             bottom: 0px;
@@ -104,17 +128,31 @@
         }
         
         .form-horizontal{
+            bottom: 305px;
             font-family: 'Acme', cursive;
+            transform: rotateY(180deg);
             width: 80%;
             position: relative;
             left: 20px;
         }
 
-        .form-horizontal .form-group{
-            bottom: 305px;
-            transform: rotateY(180deg);
+        .form-horizontal .text-form{
+            color: #ffffff;
             position: relative;
+            top: 8px;
+            text-align: center;
+            font-size: 26px;
         }
+
+        .form-group label{
+             color: #ffffff;
+             font-size: 16px;
+        }
+
+        /*.form-horizontal .form-group{
+            bottom: 305px;
+            position: relative;
+        }*/
 
        
 
@@ -195,7 +233,19 @@
             .carousel-inner .item .img{
                 width: 100%;
                 height: auto!important;
+            }
 
+            .form-horizontal .text-form{
+                color: #ffffff;
+                position: relative;
+                top: 3px;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .form-group label{
+             color: #ffffff;
+             font-size: 13px;
             }
         }
 
