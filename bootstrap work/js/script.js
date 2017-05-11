@@ -2,14 +2,16 @@ $(function(){
 
 	var controller = new ScrollMagic.Controller();  	//Controlador de scrollmagic
 
-	var tweenbox = TweenMax.staggerFromTo('.fa', 2,  	//Animacion TweenMax para footer
-											{bottom: 500, rotationY: 0}, 
-											{bottom: 0,rotationY: 360, ease: Back.easeOut}, 0.9); 
 
-	var scene3 = new ScrollMagic.Scene({ 				//Incluir TweenMax y sus propiedades al scroll magic
+	//Animacion TweenMax para footer
+	var tweenbox = new TweenMax.staggerTo('.form-group', 1, {bottom: 0,rotationY: 360, ease: Back.easeOut}); 
+
+
+	//Incluir TweenMax y sus propiedades al scroll magic
+	var scene3 = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										duration: 90,
-										offset: 650
+										offset: 315,
+										triggerHook: "onEnter"
 										})
 										.setTween(tweenbox)
 										.addIndicators()

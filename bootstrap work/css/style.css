@@ -92,22 +92,37 @@
 
         /* FOOTER */
 
-        #footer{
+         #footer{
             position: absolute;
             overflow: hidden;
             bottom: 0px;
             width: 100%;
-            height: 200px;
+            height: 330px;
             display: flex;
             background-color: #005A6F;
             
         }
+        
+        .form-horizontal{
+            font-family: 'Acme', cursive;
+            width: 80%;
+            position: relative;
+            left: 20px;
+        }
+
+        .form-horizontal .form-group{
+            bottom: 305px;
+            transform: rotateY(180deg);
+            position: relative;
+        }
+
+       
 
         #anim-footer{
             display: flex;
             position: absolute;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-around;
             right: 0;
             height: 100%;
@@ -116,7 +131,8 @@
         }
 
         #anim-footer .fa{
-            bottom: 500px;
+            left: 35px;
+            bottom: 305px;
             font-size: 45px!important;
             color: #000303;
             position: relative;
