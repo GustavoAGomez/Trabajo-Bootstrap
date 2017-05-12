@@ -258,7 +258,7 @@
         @media only screen and (max-width: 768px) {
              
              html{
-                min-height: 1555px;
+                min-height: 1820px;
                 }
 
             .carousel-inner{
@@ -293,7 +293,7 @@
             }
 
             .well-plug{
-                width: 100%
+                width: 100%;
                 height: 35%;
             }
         }
@@ -303,7 +303,7 @@
         @media only screen and (max-width: 600px) {
 
             html{
-                min-height: 1430px;
+                min-height: 2355px;
             }
             
             .carousel-inner{
@@ -345,6 +345,12 @@
                 height: 35%;
             }
 
+        }
+
+        @media only screen and (min-width: 563px) and (max-width: 600px) {
+            html{
+                min-height: 1695px;
+            }
         }
 
 
