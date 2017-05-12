@@ -4,10 +4,10 @@ $(function(){
 
 
 	//Animacion TweenMax para formulario
-	var tweenform = new TweenMax.staggerTo('.form-horizontal', 1, {bottom: 0, ease: Bounce.easeOut}); 
+	var tweenform = new TweenMax.staggerTo('.form-horizontal', 1, {right: 0, opacity: 1, ease: Expo.easeOut}); 
 
 	//Animacion TweenMax para informacion-footer
-	var tweeninfo = new TweenMax.staggerTo('.go-plus', 1, {left: 0, ease: Bounce.easeOut}); 
+	var tweeninfo = new TweenMax.to('.go-plus', 1, {left: 0, opacity: 1, ease: Expo.easeOut}); 
 
 
 	//Incluir TweenMax y sus propiedades al scroll magic

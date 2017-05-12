@@ -32,7 +32,7 @@
         }
 
         .dropdown-menu>li>a:hover{
-            color:#b58900;
+            color: #ffffff;
             transition: all .1s;
         }
 
@@ -94,7 +94,7 @@
 
         #interior{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
             height: 865px;
@@ -102,22 +102,34 @@
         }
 
         .well-info{
-            width: 50%;
+            width: 45%;
             height: 100%;
             text-align: center;
             justify-content: center;
         }
 
-        .well-video{
+        .interior-der{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             width: 45%;
-            height: 50%;
-            padding: 0px;
+            height: 100%;
+        }
 
+        .well-video{
+            width: 100%;
+            height: 45%;
         }
 
         .well-video iframe{
             width: 100%;
             height: 100%;
+         }
+
+         .well-plug{
+            width: 100%;
+            height: 50%;
          }
 
         /* FOOTER */
@@ -135,12 +147,11 @@
         }
         
         .form-horizontal{
-            bottom: 305px;
-            font-family: 'Acme', cursive;
-            
+            font-family: 'Acme', cursive;            
             width: 80%;
             position: relative;
-            left: 20px;
+            right: -630px;
+            
         }
 
         .form-horizontal .text-form{
@@ -172,7 +183,8 @@
 
         #info .go-plus{
             position: relative;
-            left: -450;
+            opacity: 0;
+            left: -500;
         }
 
 
@@ -218,6 +230,27 @@
                 top: 450px;
             }
 
+            .well-info{
+            width: 28%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+            .interior-der{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 71%;
+            height: 100%;
+            }
+
+            .well-video{
+            width: 80%;
+            height: 45%;
+            }
+
         }
 
         /* For Tablets */
@@ -243,6 +276,25 @@
 
             #interior{
                 flex-direction: column;
+            }
+
+            .well-info{
+                width: 100%;
+            }
+
+            .interior-der{
+                height: 100%;
+                width: 100%;
+            }
+
+            .well-video{
+                width: 100%;
+                height: 55%;
+            }
+
+            .well-plug{
+                width: 100%
+                height: 35%;
             }
         }
 
@@ -288,6 +340,11 @@
             #interior{
                 flex-direction: column;
             }
+
+            .well-plug{
+                height: 35%;
+            }
+
         }
 
 
