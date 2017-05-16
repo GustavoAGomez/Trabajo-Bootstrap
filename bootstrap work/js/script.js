@@ -9,6 +9,9 @@ $(function(){
 	//Animacion TweenMax para informacion-footer
 	var tweeninfo = new TweenMax.to('.go-plus', 1, {left: 0, opacity: 1, ease: Expo.easeOut}); 
 
+	//Animacion TweenMax para email/redes
+	var tweenemail = new TweenMax.to('.email', 1, {left: 0, opacity: 1, ease: Expo.easeOut});
+
 
 	//Incluir TweenMax y sus propiedades al scroll magic
 	var SceneForm = new ScrollMagic.Scene({ 				
@@ -26,6 +29,15 @@ $(function(){
 										triggerHook: "onEnter"
 										})
 										.setTween(tweeninfo)
+										.addIndicators()
+										.addTo(controller);
+
+	var SceneGoPlus = new ScrollMagic.Scene({ 				
+										triggerElement: '#trigger',
+										offset: 290,
+										triggerHook: "onEnter"
+										})
+										.setTween(tweenemail)
 										.addIndicators()
 										.addTo(controller);
 

@@ -104,6 +104,7 @@
         .well-info{
             width: 45%;
             height: 100%;
+            border-radius: 20px;
             text-align: center;
             justify-content: center;
         }
@@ -114,12 +115,12 @@
             align-items: center;
             justify-content: space-between;
             width: 45%;
-            height: 100%;
+            height: 78%;
         }
 
         .well-video{
             width: 100%;
-            height: 45%;
+            height: 57%;
         }
 
         .well-video iframe{
@@ -130,6 +131,13 @@
          .well-plug{
             width: 100%;
             height: 50%;
+         }
+ 
+
+         /*MODIFICADOR DE PLUGINS*/
+
+         .forecastItem{
+            transition: all .4s;
          }
 
         /* FOOTER */
@@ -156,6 +164,7 @@
 
         .form-horizontal .text-form{
             color: #ffffff;
+            text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.68);
             position: relative;
             top: 8px;
             text-align: center;
@@ -174,17 +183,32 @@
 
         #info{
             display: flex;
+            flex-direction: column;
             position: relative;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             height: 100%;
             width: 50%;
+            font-family: 'Acme', cursive; 
+            font-size: 23px;
+            text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.68);
+            color: #ffffff;
         }
 
+        
         #info .go-plus{
+            position: relative;
+            text-align: center;
+            opacity: 0;
+            left: -500;
+        }
+
+        #info .email{
+            text-align: center;
             position: relative;
             opacity: 0;
             left: -500;
+            bottom: 8px;
         }
 
 
@@ -214,8 +238,17 @@
 
         @media only screen and (max-width: 1200px) {
             html{
-                min-height: 1666px;
+                min-height: 1580px;
             }
+
+            #interior{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 784px;
+            padding: 35px;
+        }
 
             .carousel-inner{
                 width: 100%;
@@ -231,7 +264,7 @@
             }
 
             .well-info{
-            width: 28%;
+            width: 39%;
             height: 100%;
             text-align: center;
             justify-content: center;
@@ -242,8 +275,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            width: 71%;
-            height: 100%;
+            width: 59%;
+            height: 70%;
             }
 
             .well-video{
@@ -258,7 +291,7 @@
         @media only screen and (max-width: 768px) {
              
              html{
-                min-height: 1820px;
+                min-height: 1981px;
                 }
 
             .carousel-inner{
@@ -275,8 +308,14 @@
             }
 
             #interior{
-                flex-direction: column;
-            }
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 858px;
+            padding: 35px;
+        }
 
             .well-info{
                 width: 100%;
@@ -288,8 +327,10 @@
             }
 
             .well-video{
+                position: relative;
+                top: 83px;
                 width: 100%;
-                height: 55%;
+                height: 100%;
             }
 
             .well-plug{
@@ -303,7 +344,7 @@
         @media only screen and (max-width: 600px) {
 
             html{
-                min-height: 2355px;
+                min-height: 1831px;
             }
             
             .carousel-inner{
@@ -345,13 +386,80 @@
                 height: 35%;
             }
 
+            .well-video{
+                position: relative;
+                top: 84px;
+                width: 100%;
+                height: 90%;
+            }
+
         }
 
-        @media only screen and (min-width: 563px) and (max-width: 600px) {
-            html{
-                min-height: 1695px;
+        /*CONDICIONES ESPECIALES*/
+
+        
+        @media only screen and (max-width: 670px) {
+
+            #footer{
+            background-image: url("../img/backfoot.png");
+            position: absolute;
+            overflow: hidden;
+            bottom: 0px;
+            width: 100%;
+            height: 545px;
+            display: flex;
+            flex-direction: column;
+            background-color: #005A6F;
+            
+            }
+
+            #info{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 45%;
+            width: 100%;
+            }
+
+            #anim-footer{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            left: 68px;
+            height: 50%;
+            width: 100%;
+            }
+
+        }
+
+        @media only screen and (min-width: 0px) and (max-width: 481px) {
+             html{
+                min-height: 2140px;
+            }
+
+            .well-video{
+                position: relative;
+                top: 496px;
+                width: 100%;
+                height: 55%;
+            }
+
+            #anim-footer{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            left: 68px;
+            height: 50%;
+            width: 90%;
             }
         }
+
+       
 
 
 
