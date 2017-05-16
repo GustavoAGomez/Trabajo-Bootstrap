@@ -16,30 +16,37 @@ $(function(){
 	//Incluir TweenMax y sus propiedades al scroll magic
 	var SceneForm = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 290,
+										offset: 150,
 										triggerHook: "onEnter"
 										})
 										.setTween(tweenform)
-										.addIndicators()
+										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 290,
+										offset: 150,
 										triggerHook: "onEnter"
 										})
 										.setTween(tweeninfo)
-										.addIndicators()
+										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 290,
+										offset: 150,
 										triggerHook: "onEnter"
 										})
 										.setTween(tweenemail)
-										.addIndicators()
+										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);
+
+	var SceneNav = new ScrollMagic.Scene({
+							offset: 10,
+							triggerHook: "onLeave"
+						})
+						.setTween(".navbar", 0.5, {opacity: 0.7})
+						.addTo(controller);
 
 
 });	
