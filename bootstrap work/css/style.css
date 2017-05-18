@@ -1,5 +1,5 @@
         
-       @import url('https://fonts.googleapis.com/css?family=Acme|Pacifico');
+       @import url('https://fonts.googleapis.com/css?family=Acme|Pacifico|Exo|Cinzel|Rajdhani');
 
        html{
         min-height: 1936px;
@@ -12,14 +12,18 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            background-image: url("../img/backprin.png");
         }
 
         .navbar{
             position: fixed;
-            width: 95%;
+            width: 100%;
             z-index: 16;
-            font-family: 'Acme', cursive;
+            font-family: 'Rajdhani', cursive;
             font-size: 17px;
+            -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
             transition: all .4s;
         }
 
@@ -29,7 +33,7 @@
         }
 
         .navbar-brand{
-            font-family: 'Pacifico', cursive;
+            font-family: 'Cinzel', cursive;
             color: #002b36 !important;
             font-size: 40px;
             margin-top: -2px;
@@ -52,6 +56,12 @@
 
         #content{
             max-width: 1200px;
+        }
+
+        .carousel{
+            -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5);
         }
 
         .carousel-indicators{
@@ -107,13 +117,22 @@
             padding: 35px;
         }
 
-        .well-info{
+        .interior-izq{
             width: 45%;
             height: 100%;
+        }
+
+        .well-info{
+            width: 100%;
+            height: 0;
+            opacity: 0;
             border-radius: 20px;
             text-align: center;
             justify-content: center;
+            overflow: hidden;
+            transition: all .1s;
         }
+
 
         .interior-der{
             display: flex;
@@ -124,9 +143,23 @@
             height: 78%;
         }
 
+        .well{
+            -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5),
+                                inset 2px 4px 5px -1px rgba(48,107,121,0.68);;
+            -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5),
+                            inset 2px 4px 5px -1px rgba(48,107,121,0.68);
+            box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.5),
+                         inset 2px 4px 5px -1px rgba(48,107,121,0.68);      
+             }
+
         .well-video{
             width: 100%;
             height: 57%;
+            border-radius: 20px;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
         }
 
         .well-video iframe{
@@ -137,6 +170,7 @@
          .well-plug{
             width: 100%;
             height: 50%;
+            border-radius: 20px;
          }
  
          .bnt-primary:hover{
@@ -154,11 +188,14 @@
             height: 330px;
             display: flex;
             background-color: #005A6F;
+            -webkit-box-shadow: inset 2px 4px 5px -1px rgba(48,107,121,0.68);;
+            -moz-box-shadow: inset 2px 4px 5px -1px rgba(48,107,121,0.68);
+            box-shadow: inset 2px 4px 5px -1px rgba(48,107,121,0.68);   
             
         }
         
         .form-horizontal{
-            font-family: 'Acme', cursive;            
+            font-family: 'Rajdhani', cursive;            
             width: 80%;
             position: relative;
             right: -630px;
@@ -175,9 +212,22 @@
             font-size: 26px;
         }
 
+        .form-group input{
+            -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+        }
+
+        .form-group button{
+            -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
+        }
+
         .form-group label{
              color: #ffffff;
              font-size: 16px;
+             text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.68);
         }
 
         #info{
@@ -188,7 +238,7 @@
             justify-content: space-around;
             height: 100%;
             width: 50%;
-            font-family: 'Acme', cursive; 
+            font-family: 'Rajdhani', cursive; 
             font-size: 23px;
             text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.68);
             color: #ffffff;
