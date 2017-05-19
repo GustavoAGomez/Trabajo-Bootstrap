@@ -13,10 +13,13 @@ $(function(){
 	var tweenemail = new TweenMax.to('.email', 1, {left: 0, opacity: 1, ease: Expo.easeOut});
 
 	//Animacion TweenMax height para info de content
-	var tweeninfowellh = new TweenMax.to('.well-info', .8, {height: "100%", ease: Power2.easeIn});
+	 var tweeninfowellh = new TweenMax.to('.well-info', .4, {height: "100%", ease: Power2.easeIn});
 
-	//Animacion TweenMax opacity para info de content
-	var tweeninfowello = new TweenMax.to('.well-info', .8, {opacity: 1});
+	//Animacion TweenMax height para plug de content
+	var tweenplugwellh = new TweenMax.to('.well-plug', .4, {height: "30%", ease: Power2.easeIn});
+
+	//Animacion TweenMax height para video de content
+	var tweenvideowellh = new TweenMax.to('.well-video', .4, {height: "57%", ease: Power2.easeIn});
 
 
 	//Incluir TweenMax y sus propiedades al scroll magic
@@ -46,8 +49,8 @@ $(function(){
 
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
-										triggerElement: '#triggerI',
-										offset: -450,	
+										triggerElement: '.well-info',
+										offset: 0,	
 										})
 										.setTween(tweeninfowellh)
 										.addIndicators({name: "1 (duration: 0)"})
@@ -55,12 +58,20 @@ $(function(){
 
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
-										triggerElement: '#triggerI',
-										offset: -450,	
+										triggerElement: '.well-plug',
+										offset: 0,	
 										})
-										.setTween(tweeninfowello)
+										.setTween(tweenplugwellh)
 										.addIndicators({name: "1 (duration: 0)"})
-										.addTo(controller);			
+										.addTo(controller);	
+
+	var SceneGoPlus = new ScrollMagic.Scene({ 				
+									triggerElement: '.well-plug',
+									offset: 280,	
+									})
+									.setTween(tweenvideowellh)
+									.addIndicators({name: "1 (duration: 0)"})
+									.addTo(controller);	
 
 
 	// NAVBAR OPACITY

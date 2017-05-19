@@ -120,12 +120,19 @@
         .interior-izq{
             width: 45%;
             height: 100%;
+            position: relative;
+        }
+
+        /*QUITAMOS PROPIEDADES BASICAS DE WELLS*/
+        .well{
+            min-height: 0px!important;
+            padding: 0!important;
+            border: 0!important;
         }
 
         .well-info{
             width: 100%;
-            height: 0;
-            opacity: 0;
+            height: 0%;
             border-radius: 20px;
             text-align: center;
             justify-content: center;
@@ -133,12 +140,21 @@
             transition: all .1s;
         }
 
+        /*.interior-izq .mask{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0px;
+            background-image: url("../img/backprin.png");
+        }*/
+
 
         .interior-der{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            position: relative;
             width: 45%;
             height: 78%;
         }
@@ -154,8 +170,10 @@
 
         .well-video{
             width: 100%;
-            height: 57%;
+            height: 0%;
+            position: relative;
             border-radius: 20px;
+            bottom: -11%;
             overflow: hidden;
             -webkit-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
             -moz-box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.5);
@@ -169,8 +187,9 @@
 
          .well-plug{
             width: 100%;
-            height: 50%;
+            height: 0%;
             border-radius: 20px;
+            overflow: hidden;
          }
  
          .bnt-primary:hover{
@@ -313,8 +332,7 @@
             }
 
             .well-info{
-            width: 39%;
-            height: 100%;
+            width: 100%;
             text-align: center;
             justify-content: center;
         }
@@ -323,24 +341,28 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            width: 59%;
-            height: 70%;
+            width: 52%;
+            height: 78%;
             }
 
             .well-video{
             width: 80%;
-            height: 45%;
             }
 
         }
 
         /* For Tablets */
 
+        @media only screen and (min-width: 768px) and (max-width: 861px) {
+            .well-plug{
+                overflow: scroll;
+            }
+        }
+
         @media only screen and (max-width: 768px) {
              
              html{
-                min-height: 1775px;
+                min-height: 2018px;
                 }
 
             .carousel-inner{
@@ -362,7 +384,7 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
-            height: 858px;
+            height: 1280px;
             padding: 35px;
         }
 
@@ -370,21 +392,25 @@
                 width: 100%;
             }
 
+            .interior-izq{
+                width: 100%;
+                height: 43%;
+                position: relative;
+            }
+
             .interior-der{
-                height: 100%;
+                height: 48%;
                 width: 100%;
             }
 
             .well-video{
                 position: relative;
-                top: 83px;
+                top: 35px;
                 width: 100%;
-                height: 100%;
             }
 
             .well-plug{
                 width: 100%;
-                height: 35%;
             }
         }
 
@@ -395,7 +421,7 @@
         @media only screen and (max-width: 670px) {
 
             html{
-                min-height: 1995px;
+                min-height: 2173px;
             }
 
             #footer{
@@ -438,7 +464,7 @@
         @media only screen and (max-width: 600px) {
 
             html{
-                min-height: 1831px;
+                min-height: 2128px;
             }
             
             .carousel-inner{
@@ -476,29 +502,23 @@
                 flex-direction: column;
             }
 
-            .well-plug{
-                height: 35%;
-            }
 
             .well-video{
                 position: relative;
                 top: 84px;
                 width: 100%;
-                height: 90%;
             }
 
         }
 
         @media only screen and (min-width: 0px) and (max-width: 481px) {
              html{
-                min-height: 2140px;
+                min-height: 2070px;
             }
-
             .well-video{
                 position: relative;
-                top: 496px;
+                top: 40px;
                 width: 100%;
-                height: 55%;
             }
 
             #anim-footer{
@@ -510,6 +530,10 @@
             left: 68px;
             height: 50%;
             width: 90%;
+            }
+
+            .well-plug{
+                overflow: scroll;
             }
         }
 
