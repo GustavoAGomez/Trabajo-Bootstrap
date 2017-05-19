@@ -25,24 +25,25 @@ $(function(){
 	//Incluir TweenMax y sus propiedades al scroll magic
 	var SceneForm = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 150,
-										triggerHook: "onEnter"
+										offset: 100,
+										triggerHook: 0.85
 										})
 										.setTween(tweenform)
+										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 150,
-										triggerHook: "onEnter"
+										offset: 100,
+										triggerHook: 0.85
 										})
 										.setTween(tweeninfo)
 										.addTo(controller);
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
 										triggerElement: '#trigger',
-										offset: 150,
-										triggerHook: "onEnter"
+										offset: 100,
+										triggerHook: 0.85
 										})
 										.setTween(tweenemail)
 										.addTo(controller);
@@ -53,7 +54,6 @@ $(function(){
 										offset: 0,	
 										})
 										.setTween(tweeninfowellh)
-										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);	
 
 
@@ -62,7 +62,6 @@ $(function(){
 										offset: 0,	
 										})
 										.setTween(tweenplugwellh)
-										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);	
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
@@ -70,7 +69,6 @@ $(function(){
 									offset: 280,	
 									})
 									.setTween(tweenvideowellh)
-									.addIndicators({name: "1 (duration: 0)"})
 									.addTo(controller);	
 
 
@@ -79,7 +77,8 @@ $(function(){
 	// 						offset: 10,
 	// 						triggerHook: "onLeave"
 	// 					})
-	// 					.setTween(".navbar", 0.5, {opacity: 0.7})
+	// 					.setTween(".navbar", 0.5, {opacity: 0.7}),
+	// 					.addIndicators({name: "1 (duration: 0)"})
 	// 					.addTo(controller);
 
 
