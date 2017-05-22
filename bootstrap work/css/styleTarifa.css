@@ -1,0 +1,54 @@
+html{
+	min-height: 1780px;
+}
+
+#interior{
+	align-items: stretch;
+	flex-direction: row;
+	height: 722px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	html{
+		min-height: 1519px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	html{
+		min-height: 1381px;
+	}
+
+}
+
+@media only screen and (max-width: 670px) {
+
+	html{
+		min-height: 1565px;
+	}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 670px) {
+
+	html{
+		min-height: 1647px;
+	}
+
+}
+
+
+@media only screen and (max-width: 562px) {
+
+	html{
+		min-height: 2515px;
+	}
+
+	#interior{
+		height: 1625px;
+	}
+
+}

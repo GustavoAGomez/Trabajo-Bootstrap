@@ -29,7 +29,6 @@ $(function(){
 										triggerHook: 0.85
 										})
 										.setTween(tweenform)
-										.addIndicators({name: "1 (duration: 0)"})
 										.addTo(controller);
 
 	var SceneGoPlus = new ScrollMagic.Scene({ 				
@@ -72,14 +71,21 @@ $(function(){
 									.addTo(controller);	
 
 
-	// NAVBAR OPACITY
-	// var SceneNav = new ScrollMagic.Scene({
-	// 						offset: 10,
-	// 						triggerHook: "onLeave"
-	// 					})
-	// 					.setTween(".navbar", 0.5, {opacity: 0.7}),
-	// 					.addIndicators({name: "1 (duration: 0)"})
-	// 					.addTo(controller);
+	// HACER FUNCIONAR EL POPOVER
+	$("[data-toggle=popover]").popover();
+	
+	// ANIMACION FOTOS OFERTA
+	$( "[class^=section]" ).click(function() {
+		
+  		if($(this).css( "width") == '375px'){
+  			$(this).css( "width", "65%");
+  			$(this).find('img').css( "opacity", ".7");
+  		}
+  		else{
+  			$(this).css( "width", "50%");
+  			$(this).find('img').css( "opacity", "1");
+  		}
 
 
-});	
+	});
+});

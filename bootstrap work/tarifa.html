@@ -13,6 +13,9 @@
    <!--  Hoja de estilos -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Hoja de estilos solo para tarifa -->
+    <link href="css/styleTarifa.css" rel="stylesheet">
+
    <!--  FONT AWESOME -->
    <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -45,10 +48,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Inicio<span class="sr-only">(current)</span></a></li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Actividades<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="active"><a href="#">Rafting</a></li>
+                                <li><a href="ActRaft.html">Rafting</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Kayak</a></li>
                                 <li role="separator" class="divider"></li>
@@ -58,8 +61,8 @@
                                 
                             </ul>
                         </li>
-                        <li><a href="tarifa.html">Tarifa</a></li>
-                        <li><a href="#">Ofertas</a></li>
+                        <li class="active"><a href="#">Tarifa</a></li>
+                        <li><a href="oferta.html">Ofertas</a></li>
                         
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -127,19 +130,10 @@
 
         <!-- CONTENIDO INTERIOR -->
         <div id="interior">
-            <div class="well well-info">
-              Texto informativo
-            </div>
-            <div class="interior-der">
-                <div class="well-plug">
-                        <script src="//www.powr.io/powr.js" external-type="html"></script> 
-                        <div class="powr-weather" id="22987865_1494920815"></div>
-                </div>
-                
-                <div class="well-video">
-                  <iframe src="https://www.youtube.com/embed/1V_xRb0x9aw" frameborder="0" allowfullscreen></iframe>
-                </div>
-                
+            <div id="triggerI" class="spacer s1"></div>
+            <div class="interior-mid">
+                <script src="//www.powr.io/powr.js" external-type="html"></script> 
+                <div class="powr-price-table" id="ecf0ca03_1494589554"></div>
             </div>
         </div>
 
@@ -151,15 +145,22 @@
         <a name="bot"></a>
 
         <!-- INFORMACION  -->
-        <div id="info">
-
+        <div id="info">   
             <!-- CONTACTO CON GOOGLE PLUS -->
             <div class="go-plus">
+                <p>Made by</p>
                 <!-- Place this tag in your head or just before your close body tag. -->
                 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
                 <!-- Place this tag where you want the widget to render. -->
                 <div class="g-person" data-width="295" data-href="//plus.google.com/u/0/102954296857441437561" data-theme="dark" data-layout="landscape" data-rel="author"></div>
+            </div>
+            
+            <!-- CONTACTO EMAIL -->
+            <div class="email">
+            <p>Contact him at</p>
+                <script src="//www.powr.io/powr.js" external-type="html"></script> 
+                <div class="powr-social-media-icons" id="cf4860fd_1494930586"></div>
             </div>
 
         </div>
@@ -168,7 +169,7 @@
         <div id="anim-footer">
             <div id="trigger" class="spacer s1"></div>
             <form class="form-horizontal">
-                <p class="text-form">Envíanos tus datos</p>
+                <p class="text-form">Send us your information</p>
                 <div class="form-group">
                   <label for="nombre">Nombre:</label>
                   <input class="form-control" placeholder="Enter name"></input>
@@ -197,7 +198,11 @@
         <script src="js/bootstrap.min.js"></script>
 
         <!-- SCRIPT -->
-        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/scriptTarifa.js"></script>
+
+        <!-- PALETA DE COLORES -->
+        <!-- http://paletton.com/#uid=13n0u0k++aX+cmA+Yg+++3a++00 -->
+
 
 
 </body>
